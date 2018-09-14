@@ -1,0 +1,76 @@
+/*Navigation*/
+
+ul
+{
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li
+{
+    display: block;
+    position: relative;
+    float: left;
+}
+
+li ul
+{
+    display: none;
+}
+
+ul li a 
+{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid #ffffff;
+    padding: 5px 15px 5px 15px;
+    background: #000;
+    margin-left: 1px;
+    white-space: nowrap;
+    width: 100px;
+    text-align: center;
+}
+
+ul li a:hover 
+{
+    background: orange;
+    
+}
+li:hover ul 
+{
+    display: block;
+    position: absolute;
+}
+
+li:hover li
+{
+    float: none;
+    font-size: 11px;
+}
+
+li:hover a 
+{
+    background: orange;
+}
+
+li:hover li a:hover 
+{
+    background: #000;
+}
+
+/*css default*/
+body{
+    background: gray;
+}
+
+.container{
+    width:980px;
+    padding: 10px;
+    height: 600px;
+    margin: 0 auto; 
+    background: #ddd;
+}
